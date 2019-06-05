@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<meta charset="UTF-8" />
-	<title>Calculator</title>
-	<script>
-	function cuadrado(){
-		var num = document.getElementById("n1");
-		num.value = num.value * num.value;
-	}
-	</script>
+    <meta charset="UTF-8" />
+    <title>Calculator</title>
+    <script>
+    function cuadrado(){
+	var num = document.getElementById("n1");
+	num.value = num.value * num.value;
+    }
+    function inversa(){
+	var num = document.getElementById("n1");
+	num.value = 1 / num.value;
+    }
+    </script>
 </head>
 <body>
-	Número:
-	<input type="text" id="n1" /><p>
-	<button onclick="cuadrado()">x²</button>
+    Número:
+    <input type="text" id="n1" /><p>
+    <button onclick="cuadrado()"> x² </button>
+    <button onclick="inversa()"> 1/x </button><p>
 </body>
 </html>
